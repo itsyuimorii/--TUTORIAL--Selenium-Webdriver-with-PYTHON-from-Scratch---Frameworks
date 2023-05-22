@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 
 
 #Create the Chrome service object, which send as a property of the chrome class.
-servie_obj = Service("");
+servie_obj = Service("/Users/itsyuimoriispace/Documents/GitHub/Selenium-Webdriver-with-PYTHON-from-Scratch---Frameworks/chromedriver_mac64/chromedriver");
 
 #Provided us with proxy drivers, call the actual browser.
 webdriver.Chrome(service = servie_obj)
