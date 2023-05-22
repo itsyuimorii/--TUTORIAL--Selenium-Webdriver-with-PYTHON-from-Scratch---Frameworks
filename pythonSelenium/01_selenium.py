@@ -6,5 +6,8 @@ from selenium.webdriver.chrome.service import Service
 servie_obj = Service("/Users/itsyuimoriispace/Documents/GitHub/Selenium-Webdriver-with-PYTHON-from-Scratch---Frameworks/chromedriver_mac64/chromedriver");
 
 #Provided us with proxy drivers, call the actual browser.
-webdriver.Chrome(service = servie_obj)
+driver = webdriver.Chrome(service = servie_obj)
 
+driver.get("https://www.google.com")
+print(driver.title)
+driver.close()
