@@ -10,4 +10,11 @@ driver = webdriver.Chrome(service = servie_obj)
 
 driver.get("https://www.google.com")
 print(driver.title)
+print(driver.current_url)
+driver.get("https://rahulshettyacademy.com/seleniumPractise/#/")
+driver.minimize_window()
+driver.back()
+driver.refresh()
+driver.forward()
 driver.close()
+
