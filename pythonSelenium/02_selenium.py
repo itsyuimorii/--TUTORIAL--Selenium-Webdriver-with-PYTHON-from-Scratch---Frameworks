@@ -23,3 +23,6 @@ driver.find_element(By.XPATH, "//input[@type='submit']").click()
 message = driver.find_element(By.CLASS_NAME, "alert-success").text
 print(message)
 assert "Success" in message
+
+driver.find_element(By.XPATH,"(//input[@type='text'])[3]").send_keys("helloagain")
+driver.find_element(By.XPATH,"(//input[@type='text'])[3]").clear()
