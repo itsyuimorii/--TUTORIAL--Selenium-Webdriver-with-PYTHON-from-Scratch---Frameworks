@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
 service_obj = Service("/Users/itsyuimoriispace/Documents/GitHub/Selenium-Webdriver-with-PYTHON-from-Scratch---Frameworks/chromedriver_mac64/chromedriver");
-driver = webdriver.Chrome(service= service_obj)
+driver = webdriver.Chrome(service = service_obj)
 
 driver.get("https://rahulshettyacademy.com/angularpractice/")
 
@@ -25,13 +25,13 @@ driver.find_element(By.CSS_SELECTOR, "#inlineRadio1").click()
 dropdown = Select(driver.find_element(By.ID, "exampleFormControlSelect1"))
 dropdown.select_by_visible_text("Female")
 dropdown.select_by_index(0)
-dropdown.select_by_value()
+# dropdown.select_by_value()
 
 
-# driver.find_element(By.XPATH, "//input[@type='submit']").click()
-# message = driver.find_element(By.CLASS_NAME, "alert-success").text
-# print(message)
-# assert "Success" in message
-#
-# driver.find_element(By.XPATH,"(//input[@type='text'])[3]").send_keys("helloagain")
-# driver.find_element(By.XPATH,"(//input[@type='text'])[3]").clear()
+driver.find_element(By.XPATH, "//input[@type='submit']").click()
+message = driver.find_element(By.CLASS_NAME, "alert-success").text
+print(message)
+assert "Success" in message
+
+driver.find_element(By.XPATH, "(//input[@type='text'])[3]").send_keys("helloagain")
+driver.find_element(By.XPATH, "(//input[@type='text'])[3]").clear()
