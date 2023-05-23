@@ -19,7 +19,7 @@ chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
 
 def main():
-    service = Service('/Users/itsyuimoriispace/Downloads/chromedriver_mac64/chromedriver')
+    service = Service('/Users/itsyuimoriispace/Downloads/chromedriver_mac_arm64/chromedriver')
     driver = webdriver.Chrome(service=service)
 
     driver.get("https://rahulshettyacademy.com/dropdownsPractise/")
@@ -29,7 +29,6 @@ def main():
     countries = driver.find_elements(By.CSS_SELECTOR, "li[class='ui-menu-item'] a")
     print(len(countries))
 
-    for country in countries:
 
 
 
