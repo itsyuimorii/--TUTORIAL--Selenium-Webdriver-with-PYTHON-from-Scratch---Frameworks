@@ -8,15 +8,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
 #chrome driver
-from selenium.webdriver.chrome.service import Service
-#-- Chrome
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
-
+ #-- Chrome
 from selenium.webdriver.chrome.options import Options
 
 chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
+
 
 def main():
     service = Service('/Users/itsyuimoriispace/Downloads/chromedriver_mac_arm64/chromedriver')
@@ -28,6 +25,14 @@ def main():
     time.sleep(2)
     countries = driver.find_elements(By.CSS_SELECTOR, "li[class='ui-menu-item'] a")
     print(len(countries))
+
+    for country in countries:
+        if country.text == "Canada":
+            country.click()
+            break
+    #print(driver.find_element(By.ID, "autosuggest").text)
+
+    # assert driver.find_element(By.ID, "autosuggest").get_attribute("value") == "canada"
 
 
 
