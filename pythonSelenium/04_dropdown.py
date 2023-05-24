@@ -3,9 +3,9 @@ from datetime import time
 from selenium import webdriver
 import time
 
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
+from selenium.webdriver.chrome.service import Service
+
 
 #chrome driver
  #-- Chrome
@@ -16,7 +16,7 @@ chrome_options.add_experimental_option("detach", True)
 
 
 def main():
-    service = Service('/Users/itsyuimoriispace/Downloads/chromedriver_mac_arm64/chromedriver')
+    service = Service("/Users/itsyuimoriispace/Documents/GitHub/Selenium-Webdriver-with-PYTHON-from-Scratch---Frameworks/chromedriver_mac64/chromedriver")
     driver = webdriver.Chrome(service=service)
 
     driver.get("https://rahulshettyacademy.com/dropdownsPractise/")
