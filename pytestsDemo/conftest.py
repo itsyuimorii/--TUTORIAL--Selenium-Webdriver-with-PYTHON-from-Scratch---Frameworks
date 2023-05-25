@@ -19,12 +19,12 @@ def crossBrowser(request):
     return request.param
 
 
-# @pytest.fixture()
-# def setup():
-#     print("I will be executing first")
-#     yield
-#     print("I will execute last")
+@pytest.fixture()
+def setup():
+    print("I will be executing first")
+    yield
+    print("I will execute last")
 
 
-# def test_fixtureDemo(setup):
-#     print("I will execute steps in fixtureDemo method")
+def test_fixtureDemo(setup):
+    print("I will execute steps in fixtureDemo method")
