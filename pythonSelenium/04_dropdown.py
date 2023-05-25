@@ -1,8 +1,7 @@
 
 from datetime import time
 from selenium import webdriver
-import time
-
+ 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 
@@ -30,9 +29,9 @@ def main():
         if country.text == "Canada":
             country.click()
             break
-    #print(driver.find_element(By.ID, "autosuggest").text)
+    print(driver.find_element(By.ID, "autosuggest").text)
 
-    # assert driver.find_element(By.ID, "autosuggest").get_attribute("value") == "canada"
+    assert driver.find_element(By.ID, "autosuggest").get_attribute("value") == "canada"
 
 
 
