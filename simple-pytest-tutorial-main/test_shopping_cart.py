@@ -1,10 +1,10 @@
 from unittest.mock import Mock
 from item_database import ItemDatabase
 from shopping_cart import ShoppingCart
-import pytest
+import pytestsDemo
 
 
-@pytest.fixture
+@pytestsDemo.fixture
 def cart():
     # All setup for the cart here...
     return ShoppingCart(5)
@@ -24,7 +24,7 @@ def test_when_add_more_than_max_items_should_fail(cart):
     for _ in range(5):
         cart.add("apple")
 
-    with pytest.raises(OverflowError):
+    with pytestsDemo.raises(OverflowError):
         cart.add("apple")
 
 
