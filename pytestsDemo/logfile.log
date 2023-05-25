@@ -1,0 +1,16 @@
+2023-05-25 11:02:38,153 :CRITICAL : test_logging :Critical issue
+2023-05-25 11:18:20,523 :CRITICAL : test_logging :Critical issue
+2023-05-25 11:19:27,177 :CRITICAL : test_logging :Critical issue
+2023-05-25 11:22:17,432 :CRITICAL : test_logging :Critical issue
+2023-05-25 11:29:50,025 :DEBUG : test_logging :A debug statement is executed
+2023-05-25 11:29:50,026 :INFO : test_logging :Information statement
+2023-05-25 11:29:50,027 :DEBUG : test_logging :A debug statement is executed
+2023-05-25 11:29:50,028 :WARNING : test_logging :Something is in warning mode
+2023-05-25 11:29:50,029 :ERROR : test_logging :A Major error has happend
+2023-05-25 11:29:50,029 :CRITICAL : test_logging :Critical issue
+2023-05-25 11:32:12,380 :DEBUG : test_logging :A debug statement is executed
+2023-05-25 11:32:12,381 :INFO : test_logging :Information statement
+2023-05-25 11:32:12,382 :DEBUG : test_logging :A debug statement is executed
+2023-05-25 11:32:12,383 :WARNING : test_logging :Something is in warning mode
+2023-05-25 11:32:12,383 :ERROR : test_logging :A Major error has happend
+2023-05-25 11:32:12,384 :CRITICAL : test_logging :Critical issue
