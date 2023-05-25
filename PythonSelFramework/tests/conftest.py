@@ -5,8 +5,8 @@ driver = None
 
 
 
-@pytest.fixture()
-def setup():
+@pytest.fixture(scope="class")
+def setup(request):
     global driver
     browser_name=request.config.getoption("browser_name")
     if browser_name == "chrome":
@@ -17,4 +17,7 @@ def setup():
         print("IE driver")
     driver.get("https://rahulshettyacademy.com/angularpractice/")
     driver.maximize_window()
- 
+
+    request.cls.driver= driver
+    yield
+    driver.close()
