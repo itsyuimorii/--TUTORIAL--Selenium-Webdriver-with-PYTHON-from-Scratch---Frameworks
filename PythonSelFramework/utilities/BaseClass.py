@@ -12,7 +12,7 @@ from selenium.webdriver.support.select import Select
 class BaseClass:
 
     def getLogger(self):
-        loggerName = inspect.stack()[1][3]
+        loggerName = inspect.stack()[1][3] 
         logger = logging.getLogger(loggerName)
         fileHandler = logging.FileHandler('logfile.log')
         formatter = logging.Formatter("%(asctime)s :%(levelname)s : %(name)s :%(message)s")

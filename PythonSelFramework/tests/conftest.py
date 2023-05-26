@@ -4,7 +4,6 @@ import time
 driver = None
 
 
-
 @pytest.fixture(scope="class")
 def setup(request):
     global driver
