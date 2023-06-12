@@ -1,6 +1,6 @@
 <div align=center>
-    <img src="https://logos-world.net/wp-content/uploads/2021/10/Python-Logo.png" height=180>
-    <p> 2023</p>
+    <!-- <img src="https://logos-world.net/wp-content/uploads/2021/10/Python-Logo.png" height=180>
+    <p> 2023</p> -->
     <h1> Selenium Webdriver with PYTHON from Scratch + Frameworks</h1>
     <p> Master Python programming, Selenium Python test automation frameworks, and Python unit testing using PyTest. </p>
 
